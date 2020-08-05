@@ -1,0 +1,1 @@
+import hash_generator_cli

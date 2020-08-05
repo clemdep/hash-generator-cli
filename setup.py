@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="hash-generator-cli-clemdep",
+    name="hash_generator_cli",
     version="0.0.1",
     author="Clem Dep",
     author_email="dev@depruneaux.com",
@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/clemdep/hash-generator-cli",
     entry_points={
         "console_scripts": [
-            "hash_generator_cli=hash_generator_cli:run"
+            "hash-generator=hash_generator_cli.cli:run"
         ]
     },
     packages=setuptools.find_packages(),

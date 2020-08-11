@@ -1,6 +1,7 @@
 import hashlib
 import os
 
+
 class FileHasher(object):
 
     def __init__(self, path, hashtype):

@@ -2,7 +2,7 @@ import hashlib
 
 
 class StringHasher(object):
-    
+
     def __init__(self, string_, hashtype):
         self.string_ = string_
         self.hashtype = hashtype
@@ -13,9 +13,6 @@ class StringHasher(object):
     def hasher(self):
         try:
             return getattr(hashlib, self.hashtype)(self.encoder()).hexdigest()
-        except:
-            raise AttributeError(f"Please provide a valid hash. \n Valid hashes are: {hashlib.algorithms_guaranteed}")
-            
-
-
-
+        except BaseException:
+            raise AttributeError(
+                f"Please provide a valid hash. \n Valid hashes are: {hashlib.algorithms_guaranteed}")

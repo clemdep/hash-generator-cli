@@ -8,6 +8,9 @@ The hashes are computed by python's built-in libraries.
 
 ## Usage
 1. Basic usage: `hash-generator [string or path to a file] [type of hash]`
+*Examples:* 
+- `hash-generator hello sha1`
+- `hash-generator /path/to/file md5`
 2. To get more information on how to use this tool: `hash-generator -h`
 Usable algorithms depend on your system but these algorithms are always available:
 * md5

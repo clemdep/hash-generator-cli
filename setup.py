@@ -14,7 +14,7 @@ setuptools.setup(
     url="https://github.com/clemdep/hash-generator-cli",
     entry_points={
         "console_scripts": [
-            "hash-generator=hash_generator_cli.lib.cli:run"
+            "hash-generator=hash_generator_cli.src.cli:run"
         ]
     },
     packages=setuptools.find_packages(),
